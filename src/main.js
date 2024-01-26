@@ -1,9 +1,9 @@
-const products = [
-  'mesa', 'silla', 'notebook', 'teclado'
+const users = [
+  'pepe', 'ana', 'maria', 'juan', 'sebastian', 'carlos', 'josefa'
 ];
 
-products.push('pantalla lcd', 'sony tv');
+//const [pepe, ana, maria, , , carlos] = users;
 
-console.log(products);
-
-products.forEach(p => console.log(p));
+const [pepe, ana, maria, ...rest] = users;
+console.log(pepe, ana, maria, ...rest);
+console.log(pepe, ana, maria, rest);
